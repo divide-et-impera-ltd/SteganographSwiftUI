@@ -15,7 +15,7 @@ struct EncodeScreen: View {
     static let hint = "Enter your secret message:"
     @State var showFilePicker = false
     @StateObject var document = Document()
-    @State private var message: String = hint
+    @StateObject var secretMessage = SecretMessage(hint)
     @State private var documentUrl: String = ""
     @State private var showProgressView: Bool = false
     
@@ -44,18 +44,7 @@ struct EncodeScreen: View {
                 }
                 
                 
-                TextEditor(text: $message)
-                    .foregroundColor(Color.gray)
-                    .frame(height: 150)
-                    .cornerRadius(25)
-                    .shadow(radius: 5)
-                    .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
-                    .onTapGesture {
-                        if message == EncodeScreen.hint {
-                            message = ""
-                        }
-                    }
-                    
+                CustomTextEditor(secretMessage: secretMessage)
                     
                 
                 Button(action: {
@@ -84,7 +73,7 @@ struct EncodeScreen: View {
     
     func encodeImage(data: Data) {
         showProgressView = true
-        ISSteganographer.hideData(message, withImage: UIImage(data: data)) { image, error in
+        ISSteganographer.hideData(secretMessage.message, withImage: UIImage(data: data)) { image, error in
             if let error = error {
                 print(error)
                 showProgressView = false
@@ -96,7 +85,7 @@ struct EncodeScreen: View {
             DispatchQueue.main.async {
                 document.data = Data()
             }
-            message = ""
+            secretMessage.message = ""
             showProgressView = false
 
         }

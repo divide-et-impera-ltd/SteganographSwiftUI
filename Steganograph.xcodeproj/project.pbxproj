@@ -20,6 +20,8 @@
 		E3845CFF2573F5530010A155 /* photo_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E3845CFE2573F5530010A155 /* photo_animation.json */; };
 		E3845D022573F5790010A155 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D012573F5790010A155 /* LottieView.swift */; };
 		E3845D072574212B0010A155 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D062574212B0010A155 /* PlaceholderImage.swift */; };
+		E3845D1225745C110010A155 /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D1125745C110010A155 /* CustomTextEditor.swift */; };
+		E3845D1525745C7C0010A155 /* SecretMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D1425745C7C0010A155 /* SecretMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		E3845CFE2573F5530010A155 /* photo_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photo_animation.json; sourceTree = "<group>"; };
 		E3845D012573F5790010A155 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		E3845D062574212B0010A155 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
+		E3845D1125745C110010A155 /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
+		E3845D1425745C7C0010A155 /* SecretMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E30F6961257309110055C93A /* Document.swift */,
+				E3845D1425745C7C0010A155 /* SecretMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				E30F697325733D0D0055C93A /* GradientButtonStyle.swift */,
 				E30F69412572E8F30055C93A /* AppView.swift */,
 				E3845D062574212B0010A155 /* PlaceholderImage.swift */,
+				E3845D1125745C110010A155 /* CustomTextEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3845D072574212B0010A155 /* PlaceholderImage.swift in Sources */,
+				E3845D1525745C7C0010A155 /* SecretMessage.swift in Sources */,
 				E30F69322571AE7A0055C93A /* EncodeScreen.swift in Sources */,
 				E30F69452572E94D0055C93A /* DecodeScreen.swift in Sources */,
 				E30F6962257309110055C93A /* Document.swift in Sources */,
+				E3845D1225745C110010A155 /* CustomTextEditor.swift in Sources */,
 				E30F69302571AE7A0055C93A /* SteganographApp.swift in Sources */,
 				E30F697425733D0D0055C93A /* GradientButtonStyle.swift in Sources */,
 				E30F69492572F3270055C93A /* DocumentPicker.swift in Sources */,

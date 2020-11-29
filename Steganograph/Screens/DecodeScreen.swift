@@ -12,7 +12,7 @@ struct DecodeScreen: View {
     
     @State var showFilePicker = false
     @StateObject var document = Document()
-    @State private var decodedMessage: String = ""
+    @StateObject var decodedMessage = SecretMessage("")
     @State private var showProgressView = false
     
     var body: some View {
@@ -48,22 +48,12 @@ struct DecodeScreen: View {
                     }
                 }.buttonStyle(GradientButtonStyle())
                 
-                Spacer().frame(height: 24)
-                
                 VStack {
-                    if !decodedMessage.isEmpty {
-                    TextEditor(text: $decodedMessage)
-                        .foregroundColor(.gray)
-                        .cornerRadius(25)
-                        .frame(height: 150)
-                        .shadow(radius: 5)
-                        .padding(EdgeInsets(top: 12, leading: 24, bottom: 24, trailing: 24))
+                    if !decodedMessage.message.isEmpty {
+                        CustomTextEditor(secretMessage: decodedMessage)
                     }
                 }
-                
             }
-            
-            
             if showProgressView == true {
                 ProgressView("Decoding...")
                     .progressViewStyle(CircularProgressViewStyle())
@@ -78,8 +68,7 @@ struct DecodeScreen: View {
                 print(error)
                 showProgressView = false
             }
-            let secretMessage = String(data: data!, encoding: String.Encoding.utf8)
-            self.decodedMessage = secretMessage!
+            self.decodedMessage.message = String(data: data!, encoding: String.Encoding.utf8)!
             showProgressView = false
         }
     }
