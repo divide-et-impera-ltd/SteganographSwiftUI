@@ -23,6 +23,8 @@ struct DecodeScreen: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 250, height: 250)
+                    .clipShape(Circle())
+                    .shadow(radius: 20)
             }).sheet(isPresented: $showFilePicker, content: {
                 DocumentPicker(callback: { url in
                     do {
@@ -34,10 +36,8 @@ struct DecodeScreen: View {
                    
                 }, onDismiss: { self.showFilePicker = false })
             })
-           Text(decodedMessage)
-            
+            Spacer().frame(height: 24)
             Button(action: {
-                
                 ISSteganographer.data(fromImage: UIImage(data: document.data)) { data, error in
                     if let error = error {
                         print(error)
@@ -47,8 +47,12 @@ struct DecodeScreen: View {
                 }
                 
             }, label: {
+                Image(systemName: "lock.open.fill")
                 Text("Decode")
             })
+            Spacer().frame(height: 24)
+            Text(decodedMessage)
+                .multilineTextAlignment(TextAlignment.center)
         }
     }
 }

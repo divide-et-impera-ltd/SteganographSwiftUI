@@ -27,6 +27,8 @@ struct EncodeScreen: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 250, height: 250)
+                    .clipShape(Circle())
+                    .shadow(radius: 20)
             }
             .sheet(isPresented: $showFilePicker) {
                 DocumentPicker(callback: { url in
@@ -40,8 +42,10 @@ struct EncodeScreen: View {
                    
                 }, onDismiss: { self.showFilePicker = false })
             }
-            
+            Spacer().frame(height: 24)
             TextField("Enter your secret message", text: $message)
+                .multilineTextAlignment(TextAlignment.center)
+            Spacer().frame(height: 24)
             Button(action: {
                 ISSteganographer.hideData(message, withImage: UIImage(data: document.data)) { image, error in
                     if let error = error {
@@ -57,6 +61,7 @@ struct EncodeScreen: View {
                    
                 }
             }) {
+                Image(systemName: "lock.fill")
                 Text("Encode")
             }
             
