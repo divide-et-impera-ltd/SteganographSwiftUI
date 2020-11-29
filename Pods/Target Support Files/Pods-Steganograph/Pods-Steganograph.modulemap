@@ -1,0 +1,6 @@
+framework module Pods_Steganograph {
+  umbrella header "Pods-Steganograph-umbrella.h"
+
+  export *
+  module * { export * }
+}

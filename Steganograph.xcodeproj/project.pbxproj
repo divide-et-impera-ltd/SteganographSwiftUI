@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B041310362B3DB00F0CEFFA /* Pods_Steganograph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6662A1D6966C64ACABD0F81F /* Pods_Steganograph.framework */; };
 		E30F69302571AE7A0055C93A /* SteganographApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F692F2571AE7A0055C93A /* SteganographApp.swift */; };
 		E30F69322571AE7A0055C93A /* EncodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F69312571AE7A0055C93A /* EncodeScreen.swift */; };
 		E30F69342571AE7B0055C93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30F69332571AE7B0055C93A /* Assets.xcassets */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29441CA1D0FCC465B1018614 /* Pods-Steganograph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganograph.debug.xcconfig"; path = "Target Support Files/Pods-Steganograph/Pods-Steganograph.debug.xcconfig"; sourceTree = "<group>"; };
+		6662A1D6966C64ACABD0F81F /* Pods_Steganograph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steganograph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF37398C6A1B1C9331758D5 /* Pods-Steganograph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganograph.release.xcconfig"; path = "Target Support Files/Pods-Steganograph/Pods-Steganograph.release.xcconfig"; sourceTree = "<group>"; };
 		E30F692C2571AE7A0055C93A /* Steganograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steganograph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30F692F2571AE7A0055C93A /* SteganographApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographApp.swift; sourceTree = "<group>"; };
 		E30F69312571AE7A0055C93A /* EncodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeScreen.swift; sourceTree = "<group>"; };
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B041310362B3DB00F0CEFFA /* Pods_Steganograph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBFEC4FB2DC99C40769F3C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6662A1D6966C64ACABD0F81F /* Pods_Steganograph.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E30F69232571AE7A0055C93A = {
 			isa = PBXGroup;
 			children = (
 				E30F692E2571AE7A0055C93A /* Steganograph */,
 				E30F692D2571AE7A0055C93A /* Products */,
+				E33298BC3D51B839DD600709 /* Pods */,
+				CBFEC4FB2DC99C40769F3C27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +114,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E33298BC3D51B839DD600709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29441CA1D0FCC465B1018614 /* Pods-Steganograph.debug.xcconfig */,
+				6FF37398C6A1B1C9331758D5 /* Pods-Steganograph.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E30F693B2571AE7B0055C93A /* Build configuration list for PBXNativeTarget "Steganograph" */;
 			buildPhases = (
+				5129C6142B3C647448578BA7 /* [CP] Check Pods Manifest.lock */,
 				E30F69282571AE7A0055C93A /* Sources */,
 				E30F69292571AE7A0055C93A /* Frameworks */,
 				E30F692A2571AE7A0055C93A /* Resources */,
+				D67D05931E9C3A337EE9CF46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +189,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5129C6142B3C647448578BA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Steganograph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67D05931E9C3A337EE9CF46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganograph/Pods-Steganograph-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganograph/Pods-Steganograph-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Steganograph/Pods-Steganograph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E30F69282571AE7A0055C93A /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		E30F693C2571AE7B0055C93A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29441CA1D0FCC465B1018614 /* Pods-Steganograph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +391,7 @@
 		};
 		E30F693D2571AE7B0055C93A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF37398C6A1B1C9331758D5 /* Pods-Steganograph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DAD229D309D31E27CC8720AD82F3F96 /* ISSteganographer.h in Headers */ = {isa = PBXBuildFile; fileRef = 879A7D8B6C3284347AFE516C81A86A9C /* ISSteganographer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9CC31C7A05CE0360ACDB68D18BAE52 /* ISStegoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB7C46F406D043A047B67D072048C1 /* ISStegoEncoder.m */; };
+		37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234D2564E24DA3CB7B1EA9DD632B498 /* PKHUDAnimating.swift */; };
+		38301B0D88E96D7A97DBA969BDDE9B2C /* ISStego-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87DA8D2F55CFB46E6A65CE15036AAF /* ISStego-dummy.m */; };
+		427D3BF30EAFE2E099ED4ABEBCEEE11C /* ISSteganographer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6249DC6B9E6F03C24F460CC58AF9D71 /* ISSteganographer.m */; };
+		442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C330B4B015A19DD9A6D29526E5A7DF1 /* PKHUDWideBaseView.swift */; };
+		4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7D754E5DD0BC7AE9B09FA8A3446C08 /* WindowRootViewController.swift */; };
+		459CCC93DA0993D8BCB1363B0653C610 /* ISPixelUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 839CF5D250305804970C18623A1DE815 /* ISPixelUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F70BD38D2DFCE66001DE6C70DAC856 /* PKHUDAnimation.swift */; };
+		4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D0BCA6490BD225E8913A96194C6EBB /* HUD.swift */; };
+		4E53C22E0D02B5641FC76D56B1C83EC5 /* ISStegoUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FEC7F05A8AD28E912E9ACDB5605D5A /* ISStegoUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BC3AA858B77A3AACABD5FE8779042 /* Window.swift */; };
+		664D89C97544EE992BEA81D1A859E118 /* ISStegoDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D81B9AC2E0E24E1128F2406D278D47 /* ISStegoDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */; };
+		6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B70033D83C1F9D1DAF499A588FF78 /* PKHUDAssets.swift */; };
+		6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80D5096F3186BA7D342EB9246055B2 /* PKHUDTextView.swift */; };
+		702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F0A33003B930E045ED9A86A097E0C /* PKHUDProgressView.swift */; };
+		7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8876FEFEA6166BAA4B9C3CF787BF2 /* PKHUDSquareBaseView.swift */; };
+		7786BCE246D1EF144D2CBCB961DB178C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7554256EFCCC671F77032EE0D2DF82 /* PKHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838E42D5FAA59403D639B67F7D3F53D3 /* ISStegoUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 827032C1194AA03F5C15DDAC43DF4CF1 /* ISStegoUtilities.m */; };
+		85868D14D0897341A71EABB871919FA9 /* ISStegoDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC41A2C179965AE0525BB02D5FC023E /* ISStegoDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7FA9B15477C3DBCF1666DEBE17C7BD /* PKHUD-dummy.m */; };
+		A49C4164E9EEBEE412AD56F7A7C3F97D /* ISStegoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A159136C7CBFC57865E1EBD1D39444B9 /* ISStegoDecoder.m */; };
+		AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 42BB27606D8592F0EFC8670140F68561 /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B08B95C4C66278C1E83A8D902C214472 /* Pods-Steganograph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF6D94FA2F041CCA431D679F6C74CE /* Pods-Steganograph-dummy.m */; };
+		B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A305CB6DA8AD43F1149285E77765ECC7 /* PKHUD.swift */; };
+		C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5587FDE7154B67172AEA90E8EB513CD9 /* PKHUDErrorView.swift */; };
+		C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECD6CEA3EFE3EFD2F07BEA4946B8D /* PKHUDRotatingImageView.swift */; };
+		C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A322D7622F3C824873C73EE095E2B /* PKHUDSystemActivityIndicatorView.swift */; };
+		CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C3AB1C59239F18FBD24D98D2BB08A /* FrameView.swift */; };
+		CAAE176055BFDEACE4846EA019DA5965 /* ISStegoDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B34626AC71DD416A783B8FF3FBBF56C /* ISStegoDefaults.m */; };
+		D2B12906B38AC9769780ECBEAC0CDC3D /* ISStego-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 530D4806D7E58F6A104CFFFC2CDADF3C /* ISStego-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5205AFF6C03DD28FB3A73F3E7D27275 /* ISPixelUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1657FDA4EC6B52601098D2FD3CB6E526 /* ISPixelUtilities.m */; };
+		D6CF2C76352BC2C01A78133DDA92B1B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E44A499C0DA89D2F5BC7F89D53EF779A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E6E0D5E6155C5858A3D616F80B01C265 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3E179BD5B3F5B3EC1DF7BD4C30D524 /* Images.xcassets */; };
+		F56801CC406A9FA3359D9F25FD9FFD6B /* ISStegoEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CA01F780DBF94BD940F1DC33472C9E74 /* ISStegoEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D5F37E6A308322D56ECEA38E3C7C9 /* PKHUDSuccessView.swift */; };
+		F93992B96F229AB0BC0A0B1D37AFE451 /* Pods-Steganograph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8CFB5991CEC467D8EEEEC3034DE6D8 /* Pods-Steganograph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BF354C2A473DE83005DAAB5A9008837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B2A1514BBFE88AA78B0C908D3CBC5AE;
+			remoteInfo = ISStego;
+		};
+		BEC9734360DA8552CFAE543653F6A9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
+			remoteInfo = PKHUD;
+		};
+		CE087C78D4128080CC44BD768AD35826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F7332F1050B42A501616421AC869EB;
+			remoteInfo = "PKHUD-PKHUDResources";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B8876FEFEA6166BAA4B9C3CF787BF2 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSquareBaseView.swift; path = PKHUD/PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
+		05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKHUD.framework; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		075A322D7622F3C824873C73EE095E2B /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
+		10DB7C46F406D043A047B67D072048C1 /* ISStegoEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStegoEncoder.m; path = ISStego/ISStegoEncoder.m; sourceTree = "<group>"; };
+		1657FDA4EC6B52601098D2FD3CB6E526 /* ISPixelUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISPixelUtilities.m; path = ISStego/Utilities/ISPixelUtilities.m; sourceTree = "<group>"; };
+		21FEC7F05A8AD28E912E9ACDB5605D5A /* ISStegoUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStegoUtilities.h; path = ISStego/Utilities/ISStegoUtilities.h; sourceTree = "<group>"; };
+		229B70033D83C1F9D1DAF499A588FF78 /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
+		22E1EBA6350BB883DDB3CCB5676D9918 /* PKHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-prefix.pch"; sourceTree = "<group>"; };
+		2A38D905BF5D4D5061CD57B1C6209DA5 /* Pods_Steganograph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Steganograph.framework; path = "Pods-Steganograph.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7FA9B15477C3DBCF1666DEBE17C7BD /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
+		3FBF6D94FA2F041CCA431D679F6C74CE /* Pods-Steganograph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Steganograph-dummy.m"; sourceTree = "<group>"; };
+		419A88008A22F6D628B377C39D46CA8D /* ISStego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISStego.debug.xcconfig; sourceTree = "<group>"; };
+		42BB27606D8592F0EFC8670140F68561 /* PKHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKHUD.h; path = PKHUD/PKHUD.h; sourceTree = "<group>"; };
+		4EC41A2C179965AE0525BB02D5FC023E /* ISStegoDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStegoDefaults.h; path = ISStego/Utilities/ISStegoDefaults.h; sourceTree = "<group>"; };
+		4F7D754E5DD0BC7AE9B09FA8A3446C08 /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = PKHUD/WindowRootViewController.swift; sourceTree = "<group>"; };
+		530D4806D7E58F6A104CFFFC2CDADF3C /* ISStego-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISStego-umbrella.h"; sourceTree = "<group>"; };
+		5587FDE7154B67172AEA90E8EB513CD9 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
+		650CAE6BB9E1FE911CB94FF125892ADF /* Pods-Steganograph-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Steganograph-acknowledgements.plist"; sourceTree = "<group>"; };
+		68D81B9AC2E0E24E1128F2406D278D47 /* ISStegoDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStegoDecoder.h; path = ISStego/ISStegoDecoder.h; sourceTree = "<group>"; };
+		6BA1F56FA8416D1237D7025250B545EB /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-PKHUD-Info.plist"; sourceTree = "<group>"; };
+		6D56B5CB8F1848BDB0EBC30E2928F465 /* ISStego-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISStego-prefix.pch"; sourceTree = "<group>"; };
+		7148F88E922E5E21F6F2A865AC4E5F3F /* ISStego.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISStego.release.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C3C3AB1C59239F18FBD24D98D2BB08A /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
+		8234D2564E24DA3CB7B1EA9DD632B498 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimating.swift; path = PKHUD/PKHUDAnimating.swift; sourceTree = "<group>"; };
+		827032C1194AA03F5C15DDAC43DF4CF1 /* ISStegoUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStegoUtilities.m; path = ISStego/Utilities/ISStegoUtilities.m; sourceTree = "<group>"; };
+		839CF5D250305804970C18623A1DE815 /* ISPixelUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISPixelUtilities.h; path = ISStego/Utilities/ISPixelUtilities.h; sourceTree = "<group>"; };
+		85C598AF387AD68C61D276D29FBA54BA /* ISStego.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ISStego.modulemap; sourceTree = "<group>"; };
+		879A7D8B6C3284347AFE516C81A86A9C /* ISSteganographer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISSteganographer.h; path = ISStego/ISSteganographer.h; sourceTree = "<group>"; };
+		8C330B4B015A19DD9A6D29526E5A7DF1 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDWideBaseView.swift; path = PKHUD/PKHUDWideBaseView.swift; sourceTree = "<group>"; };
+		8F58C77D7CDC57F1F2C05864D4AA9850 /* ISStego-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ISStego-Info.plist"; sourceTree = "<group>"; };
+		92FA3504E8FB4AF99A87A2E0CF846092 /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
+		9B34626AC71DD416A783B8FF3FBBF56C /* ISStegoDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStegoDefaults.m; path = ISStego/Utilities/ISStegoDefaults.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A159136C7CBFC57865E1EBD1D39444B9 /* ISStegoDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISStegoDecoder.m; path = ISStego/ISStegoDecoder.m; sourceTree = "<group>"; };
+		A305CB6DA8AD43F1149285E77765ECC7 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
+		A95CC0C972BA0ACE3B6D68EC381F9731 /* PKHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PKHUD.modulemap; sourceTree = "<group>"; };
+		AB87DA8D2F55CFB46E6A65CE15036AAF /* ISStego-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISStego-dummy.m"; sourceTree = "<group>"; };
+		AC234DD6915AD5A0C0FE58E29CA0B7C9 /* Pods-Steganograph-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Steganograph-frameworks.sh"; sourceTree = "<group>"; };
+		AF0BC3AA858B77A3AACABD5FE8779042 /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
+		B6019D10B6AAE606B7D44B090294805B /* Pods-Steganograph-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Steganograph-Info.plist"; sourceTree = "<group>"; };
+		B78F0A33003B930E045ED9A86A097E0C /* PKHUDProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDProgressView.swift; path = PKHUD/PKHUDProgressView.swift; sourceTree = "<group>"; };
+		B7F70BD38D2DFCE66001DE6C70DAC856 /* PKHUDAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimation.swift; path = PKHUD/PKHUDAnimation.swift; sourceTree = "<group>"; };
+		B9C1B73ABAE0FC5C9F1E792251ED7174 /* Pods-Steganograph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Steganograph.debug.xcconfig"; sourceTree = "<group>"; };
+		BF7554256EFCCC671F77032EE0D2DF82 /* PKHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-umbrella.h"; sourceTree = "<group>"; };
+		BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PKHUDResources.bundle; path = "PKHUD-PKHUDResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B85FE987205815CDAD549177530059 /* ISStego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISStego.framework; path = ISStego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6249DC6B9E6F03C24F460CC58AF9D71 /* ISSteganographer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISSteganographer.m; path = ISStego/ISSteganographer.m; sourceTree = "<group>"; };
+		C91A00DCC2FFA27F6A2ABE6796404A14 /* PKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.release.xcconfig; sourceTree = "<group>"; };
+		C9EECD6CEA3EFE3EFD2F07BEA4946B8D /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		CA01F780DBF94BD940F1DC33472C9E74 /* ISStegoEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISStegoEncoder.h; path = ISStego/ISStegoEncoder.h; sourceTree = "<group>"; };
+		CAF32A7CA4FC200E9DDE6F46CA6A35C5 /* PKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.debug.xcconfig; sourceTree = "<group>"; };
+		CD3E179BD5B3F5B3EC1DF7BD4C30D524 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
+		D90D5F37E6A308322D56ECEA38E3C7C9 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
+		DD27163AB292BF549C183A8E55D43266 /* Pods-Steganograph-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Steganograph-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE80D5096F3186BA7D342EB9246055B2 /* PKHUDTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDTextView.swift; path = PKHUD/PKHUDTextView.swift; sourceTree = "<group>"; };
+		E6D0BCA6490BD225E8913A96194C6EBB /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
+		FC43ADA3760647A80C066CF70DCA6889 /* Pods-Steganograph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Steganograph.modulemap"; sourceTree = "<group>"; };
+		FD8CFB5991CEC467D8EEEEC3034DE6D8 /* Pods-Steganograph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Steganograph-umbrella.h"; sourceTree = "<group>"; };
+		FFB5922F89D7205C89B007D046C652D5 /* Pods-Steganograph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Steganograph.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00EB9831397C2C46F8768F5702F4C4CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44A499C0DA89D2F5BC7F89D53EF779A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612D8A767FE2EF1CC156924D314BDC44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CF2C76352BC2C01A78133DDA92B1B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8C3DDAFD35851100E2627949924ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7786BCE246D1EF144D2CBCB961DB178C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ACB182E5542C6F0A9E81578C30209C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4B85FE987205815CDAD549177530059 /* ISStego.framework */,
+				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
+				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
+				2A38D905BF5D4D5061CD57B1C6209DA5 /* Pods_Steganograph.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A3A4481055845E536162433406BB629 /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7C3C3AB1C59239F18FBD24D98D2BB08A /* FrameView.swift */,
+				E6D0BCA6490BD225E8913A96194C6EBB /* HUD.swift */,
+				42BB27606D8592F0EFC8670140F68561 /* PKHUD.h */,
+				A305CB6DA8AD43F1149285E77765ECC7 /* PKHUD.swift */,
+				8234D2564E24DA3CB7B1EA9DD632B498 /* PKHUDAnimating.swift */,
+				B7F70BD38D2DFCE66001DE6C70DAC856 /* PKHUDAnimation.swift */,
+				229B70033D83C1F9D1DAF499A588FF78 /* PKHUDAssets.swift */,
+				5587FDE7154B67172AEA90E8EB513CD9 /* PKHUDErrorView.swift */,
+				B78F0A33003B930E045ED9A86A097E0C /* PKHUDProgressView.swift */,
+				C9EECD6CEA3EFE3EFD2F07BEA4946B8D /* PKHUDRotatingImageView.swift */,
+				04B8876FEFEA6166BAA4B9C3CF787BF2 /* PKHUDSquareBaseView.swift */,
+				D90D5F37E6A308322D56ECEA38E3C7C9 /* PKHUDSuccessView.swift */,
+				075A322D7622F3C824873C73EE095E2B /* PKHUDSystemActivityIndicatorView.swift */,
+				DE80D5096F3186BA7D342EB9246055B2 /* PKHUDTextView.swift */,
+				8C330B4B015A19DD9A6D29526E5A7DF1 /* PKHUDWideBaseView.swift */,
+				AF0BC3AA858B77A3AACABD5FE8779042 /* Window.swift */,
+				4F7D754E5DD0BC7AE9B09FA8A3446C08 /* WindowRootViewController.swift */,
+				B218C0ED4E90AAB04BEC9473BD00313E /* Resources */,
+				DB2143F868B1BB4C381AE9E3B306E12F /* Support Files */,
+			);
+			name = PKHUD;
+			path = PKHUD;
+			sourceTree = "<group>";
+		};
+		251F336BBAEC964FE6EF838F5AC53A67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE13980161F42E6FA95E4031259F3E50 /* ISStego */,
+				1A3A4481055845E536162433406BB629 /* PKHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2B695A2E38A5CFB450314CB4B23B1E7C /* Pods-Steganograph */ = {
+			isa = PBXGroup;
+			children = (
+				FC43ADA3760647A80C066CF70DCA6889 /* Pods-Steganograph.modulemap */,
+				DD27163AB292BF549C183A8E55D43266 /* Pods-Steganograph-acknowledgements.markdown */,
+				650CAE6BB9E1FE911CB94FF125892ADF /* Pods-Steganograph-acknowledgements.plist */,
+				3FBF6D94FA2F041CCA431D679F6C74CE /* Pods-Steganograph-dummy.m */,
+				AC234DD6915AD5A0C0FE58E29CA0B7C9 /* Pods-Steganograph-frameworks.sh */,
+				B6019D10B6AAE606B7D44B090294805B /* Pods-Steganograph-Info.plist */,
+				FD8CFB5991CEC467D8EEEEC3034DE6D8 /* Pods-Steganograph-umbrella.h */,
+				B9C1B73ABAE0FC5C9F1E792251ED7174 /* Pods-Steganograph.debug.xcconfig */,
+				FFB5922F89D7205C89B007D046C652D5 /* Pods-Steganograph.release.xcconfig */,
+			);
+			name = "Pods-Steganograph";
+			path = "Target Support Files/Pods-Steganograph";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		604A6CADC8B0DB45D11ADF4FFE39A10A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C598AF387AD68C61D276D29FBA54BA /* ISStego.modulemap */,
+				AB87DA8D2F55CFB46E6A65CE15036AAF /* ISStego-dummy.m */,
+				8F58C77D7CDC57F1F2C05864D4AA9850 /* ISStego-Info.plist */,
+				6D56B5CB8F1848BDB0EBC30E2928F465 /* ISStego-prefix.pch */,
+				530D4806D7E58F6A104CFFFC2CDADF3C /* ISStego-umbrella.h */,
+				419A88008A22F6D628B377C39D46CA8D /* ISStego.debug.xcconfig */,
+				7148F88E922E5E21F6F2A865AC4E5F3F /* ISStego.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ISStego";
+			sourceTree = "<group>";
+		};
+		B218C0ED4E90AAB04BEC9473BD00313E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E179BD5B3F5B3EC1DF7BD4C30D524 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				251F336BBAEC964FE6EF838F5AC53A67 /* Pods */,
+				0ACB182E5542C6F0A9E81578C30209C3 /* Products */,
+				FF7CEA6AAF35597FF0BABE93F8B6ECA4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB2143F868B1BB4C381AE9E3B306E12F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A95CC0C972BA0ACE3B6D68EC381F9731 /* PKHUD.modulemap */,
+				2F7FA9B15477C3DBCF1666DEBE17C7BD /* PKHUD-dummy.m */,
+				92FA3504E8FB4AF99A87A2E0CF846092 /* PKHUD-Info.plist */,
+				22E1EBA6350BB883DDB3CCB5676D9918 /* PKHUD-prefix.pch */,
+				BF7554256EFCCC671F77032EE0D2DF82 /* PKHUD-umbrella.h */,
+				CAF32A7CA4FC200E9DDE6F46CA6A35C5 /* PKHUD.debug.xcconfig */,
+				C91A00DCC2FFA27F6A2ABE6796404A14 /* PKHUD.release.xcconfig */,
+				6BA1F56FA8416D1237D7025250B545EB /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PKHUD";
+			sourceTree = "<group>";
+		};
+		FE13980161F42E6FA95E4031259F3E50 /* ISStego */ = {
+			isa = PBXGroup;
+			children = (
+				839CF5D250305804970C18623A1DE815 /* ISPixelUtilities.h */,
+				1657FDA4EC6B52601098D2FD3CB6E526 /* ISPixelUtilities.m */,
+				879A7D8B6C3284347AFE516C81A86A9C /* ISSteganographer.h */,
+				C6249DC6B9E6F03C24F460CC58AF9D71 /* ISSteganographer.m */,
+				68D81B9AC2E0E24E1128F2406D278D47 /* ISStegoDecoder.h */,
+				A159136C7CBFC57865E1EBD1D39444B9 /* ISStegoDecoder.m */,
+				4EC41A2C179965AE0525BB02D5FC023E /* ISStegoDefaults.h */,
+				9B34626AC71DD416A783B8FF3FBBF56C /* ISStegoDefaults.m */,
+				CA01F780DBF94BD940F1DC33472C9E74 /* ISStegoEncoder.h */,
+				10DB7C46F406D043A047B67D072048C1 /* ISStegoEncoder.m */,
+				21FEC7F05A8AD28E912E9ACDB5605D5A /* ISStegoUtilities.h */,
+				827032C1194AA03F5C15DDAC43DF4CF1 /* ISStegoUtilities.m */,
+				604A6CADC8B0DB45D11ADF4FFE39A10A /* Support Files */,
+			);
+			name = ISStego;
+			path = ISStego;
+			sourceTree = "<group>";
+		};
+		FF7CEA6AAF35597FF0BABE93F8B6ECA4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B695A2E38A5CFB450314CB4B23B1E7C /* Pods-Steganograph */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		77FE06C24F3D9A30969AF6292046EA64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */,
+				AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93B3959F0C0C052ECAD93738D40E8238 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93992B96F229AB0BC0A0B1D37AFE451 /* Pods-Steganograph-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA95F0AC8A32234217E1002DA375C9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459CCC93DA0993D8BCB1363B0653C610 /* ISPixelUtilities.h in Headers */,
+				0DAD229D309D31E27CC8720AD82F3F96 /* ISSteganographer.h in Headers */,
+				D2B12906B38AC9769780ECBEAC0CDC3D /* ISStego-umbrella.h in Headers */,
+				664D89C97544EE992BEA81D1A859E118 /* ISStegoDecoder.h in Headers */,
+				85868D14D0897341A71EABB871919FA9 /* ISStegoDefaults.h in Headers */,
+				F56801CC406A9FA3359D9F25FD9FFD6B /* ISStegoEncoder.h in Headers */,
+				4E53C22E0D02B5641FC76D56B1C83EC5 /* ISStegoUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B2A1514BBFE88AA78B0C908D3CBC5AE /* ISStego */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165C21E9CDCB70025E24794439DF255A /* Build configuration list for PBXNativeTarget "ISStego" */;
+			buildPhases = (
+				BDA95F0AC8A32234217E1002DA375C9D /* Headers */,
+				CC43331DCED489468985BF88047230DF /* Sources */,
+				DE8C3DDAFD35851100E2627949924ACF /* Frameworks */,
+				F9A85B055984CD043D0A574A4C0749FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISStego;
+			productName = ISStego;
+			productReference = C4B85FE987205815CDAD549177530059 /* ISStego.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		364873017BA37260EF589D44B6B73D21 /* PKHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */;
+			buildPhases = (
+				77FE06C24F3D9A30969AF6292046EA64 /* Headers */,
+				CAA693190E7E902B5A46F8B6A4723E98 /* Sources */,
+				0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */,
+				4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AF078BAEF32FB9B7B2ED37AE1330913 /* PBXTargetDependency */,
+			);
+			name = PKHUD;
+			productName = PKHUD;
+			productReference = 05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E58A8E4188D663AC324F051BED8281E0 /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */;
+			buildPhases = (
+				D6A3B4D60CB96EC008B37D9049AC5FDD /* Sources */,
+				00EB9831397C2C46F8768F5702F4C4CB /* Frameworks */,
+				730B5ABEA091BF0805E1EE4C3C1CE96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PKHUD-PKHUDResources";
+			productName = "PKHUD-PKHUDResources";
+			productReference = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C8A7A5095FD97B30B72D8F31577538EF /* Pods-Steganograph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C936995AA000D61752B284B8B8E69DC0 /* Build configuration list for PBXNativeTarget "Pods-Steganograph" */;
+			buildPhases = (
+				93B3959F0C0C052ECAD93738D40E8238 /* Headers */,
+				9A1682ECA6EA4C773FEA516CA94C72F6 /* Sources */,
+				612D8A767FE2EF1CC156924D314BDC44 /* Frameworks */,
+				3D9BAFE3DB449832C3020A65268CE8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D382793B1590D0E005591E0E88BD5A46 /* PBXTargetDependency */,
+				D0D32ED479B94F9F93CEF28017F8BE92 /* PBXTargetDependency */,
+			);
+			name = "Pods-Steganograph";
+			productName = "Pods-Steganograph";
+			productReference = 2A38D905BF5D4D5061CD57B1C6209DA5 /* Pods_Steganograph.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0ACB182E5542C6F0A9E81578C30209C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B2A1514BBFE88AA78B0C908D3CBC5AE /* ISStego */,
+				364873017BA37260EF589D44B6B73D21 /* PKHUD */,
+				A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */,
+				C8A7A5095FD97B30B72D8F31577538EF /* Pods-Steganograph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9BAFE3DB449832C3020A65268CE8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730B5ABEA091BF0805E1EE4C3C1CE96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0D5E6155C5858A3D616F80B01C265 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A85B055984CD043D0A574A4C0749FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A1682ECA6EA4C773FEA516CA94C72F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08B95C4C66278C1E83A8D902C214472 /* Pods-Steganograph-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA693190E7E902B5A46F8B6A4723E98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */,
+				4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */,
+				8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */,
+				B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */,
+				37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */,
+				45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */,
+				6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */,
+				C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */,
+				702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */,
+				C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */,
+				7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */,
+				F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */,
+				C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */,
+				6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */,
+				442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */,
+				4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */,
+				4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC43331DCED489468985BF88047230DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5205AFF6C03DD28FB3A73F3E7D27275 /* ISPixelUtilities.m in Sources */,
+				427D3BF30EAFE2E099ED4ABEBCEEE11C /* ISSteganographer.m in Sources */,
+				38301B0D88E96D7A97DBA969BDDE9B2C /* ISStego-dummy.m in Sources */,
+				A49C4164E9EEBEE412AD56F7A7C3F97D /* ISStegoDecoder.m in Sources */,
+				CAAE176055BFDEACE4846EA019DA5965 /* ISStegoDefaults.m in Sources */,
+				2D9CC31C7A05CE0360ACDB68D18BAE52 /* ISStegoEncoder.m in Sources */,
+				838E42D5FAA59403D639B67F7D3F53D3 /* ISStegoUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A3B4D60CB96EC008B37D9049AC5FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AF078BAEF32FB9B7B2ED37AE1330913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PKHUD-PKHUDResources";
+			target = A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */;
+			targetProxy = CE087C78D4128080CC44BD768AD35826 /* PBXContainerItemProxy */;
+		};
+		D0D32ED479B94F9F93CEF28017F8BE92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
+			targetProxy = BEC9734360DA8552CFAE543653F6A9F2 /* PBXContainerItemProxy */;
+		};
+		D382793B1590D0E005591E0E88BD5A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ISStego;
+			target = 1B2A1514BBFE88AA78B0C908D3CBC5AE /* ISStego */;
+			targetProxy = 7BF354C2A473DE83005DAAB5A9008837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		264EEEF3137512DFDF34589DB38C82E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF32A7CA4FC200E9DDE6F46CA6A35C5 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4062F6A6F013207A24F31AC1BB9B5180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB5922F89D7205C89B007D046C652D5 /* Pods-Steganograph.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Steganograph/Pods-Steganograph-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Steganograph/Pods-Steganograph.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A22E1CB018FD63EDD0BF067F0C6B9472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91A00DCC2FFA27F6A2ABE6796404A14 /* PKHUD.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BCB8E7A729BB9DED4FAC0CB9E376F8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419A88008A22F6D628B377C39D46CA8D /* ISStego.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ISStego/ISStego-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISStego/ISStego-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ISStego/ISStego.modulemap";
+				PRODUCT_MODULE_NAME = ISStego;
+				PRODUCT_NAME = ISStego;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8886BE148557B679CA1F8E825F0F735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91A00DCC2FFA27F6A2ABE6796404A14 /* PKHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA9D00B36CEC085828E9D3BEC50EBB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C1B73ABAE0FC5C9F1E792251ED7174 /* Pods-Steganograph.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Steganograph/Pods-Steganograph-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Steganograph/Pods-Steganograph.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED347D9D3E5156DC29FBFC30DBCEF3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF32A7CA4FC200E9DDE6F46CA6A35C5 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F25E75808757FA231B08C1A80BE29B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7148F88E922E5E21F6F2A865AC4E5F3F /* ISStego.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ISStego/ISStego-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ISStego/ISStego-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ISStego/ISStego.modulemap";
+				PRODUCT_MODULE_NAME = ISStego;
+				PRODUCT_NAME = ISStego;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		165C21E9CDCB70025E24794439DF255A /* Build configuration list for PBXNativeTarget "ISStego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB8E7A729BB9DED4FAC0CB9E376F8DC /* Debug */,
+				F25E75808757FA231B08C1A80BE29B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264EEEF3137512DFDF34589DB38C82E9 /* Debug */,
+				E8886BE148557B679CA1F8E825F0F735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C936995AA000D61752B284B8B8E69DC0 /* Build configuration list for PBXNativeTarget "Pods-Steganograph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9D00B36CEC085828E9D3BEC50EBB48 /* Debug */,
+				4062F6A6F013207A24F31AC1BB9B5180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E58A8E4188D663AC324F051BED8281E0 /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED347D9D3E5156DC29FBFC30DBCEF3E0 /* Debug */,
+				A22E1CB018FD63EDD0BF067F0C6B9472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -8,15 +8,14 @@
 import SwiftUI
 import MobileCoreServices
 import UniformTypeIdentifiers
+import ISStego
 
 struct EncodeScreen: View {
     
     @State var showFilePicker = false
     @ObservedObject var document: Document
-    
-    func parseFile(_ url: URL) {
-        print(url.absoluteURL)
-    }
+    @State private var message: String = ""
+    @State private var documentUrl: String = ""
     
     var body: some View {
        
@@ -33,14 +32,34 @@ struct EncodeScreen: View {
                 DocumentPicker(callback: { url in
                     do {
                         document.data = try Data(contentsOf: url)
-                        print(url)
+                        print(url.deletingLastPathComponent())
+                        documentUrl = url.deletingLastPathComponent().absoluteString
                     } catch {
                         print(error)
                     }
                    
                 }, onDismiss: { self.showFilePicker = false })
             }
-
+            
+            TextField("Enter your secret message", text: $message)
+            Button(action: {
+                ISSteganographer.hideData(message, withImage: UIImage(data: document.data)) { image, error in
+                    if let error = error {
+                        print(error)
+                    }
+                    let img = image as! UIImage
+                    DispatchQueue.main.async {
+                        document.data = img.pngData()!
+                        
+                    }
+                    let filename = URL(string: documentUrl)?.appendingPathComponent("steganograped.png")
+                    try? img.pngData()!.write(to: filename!)
+                   
+                }
+            }) {
+                Text("Encode")
+            }
+            
         }
     }
 }
@@ -48,9 +67,6 @@ struct EncodeScreen: View {
 struct ContentView_Previews: PreviewProvider {
     
     static var previews: some View {
-        func filePicked(_ url: URL) {
-//            print("Filename: \(url)")
-        }
         let document = Document()
         return EncodeScreen(document: document)
     }
