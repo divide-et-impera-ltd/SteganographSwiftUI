@@ -14,6 +14,7 @@ struct DecodeScreen: View {
     @StateObject var document = Document()
     @StateObject var decodedMessage = SecretMessage("")
     @State private var showProgressView = false
+    @State var showEmptyFieldsAlert = false
     
     var body: some View {
         ZStack {
@@ -38,7 +39,8 @@ struct DecodeScreen: View {
                 
                 Button(action: {
                     if document.data.isEmpty {
-                        // TODO display alert to prompt user to drop image
+                        self.showEmptyFieldsAlert = true
+                        return
                     }
                     decodeImage(data: document.data)
                 }) {
@@ -46,7 +48,14 @@ struct DecodeScreen: View {
                         Image(systemName: "lock.open.fill")
                         Text("Decode")
                     }
-                }.buttonStyle(GradientButtonStyle())
+                }
+                .buttonStyle(GradientButtonStyle())
+                .alert(isPresented: $showEmptyFieldsAlert, content: {
+                    Alert(title: Text("Error"),
+                          message: Text("Please upload a file to decode"),
+                          dismissButton: .default(Text("Ok")))
+                })
+                
                 
                 VStack {
                     if !decodedMessage.message.isEmpty {

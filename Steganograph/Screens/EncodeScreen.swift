@@ -13,13 +13,15 @@ import ISStego
 
 struct EncodeScreen: View {
     static let hint = "Enter your secret message:"
-    @State var showFilePicker = false
+
     @StateObject var document = Document()
     @StateObject var secretMessage = SecretMessage(hint)
+    
     @State private var documentUrl: String = ""
     @State private var showProgressView: Bool = false
+    @State var showFilePicker = false
+    @State var showEmptyFieldsAlert = false
     
-
     
     var body: some View {
         
@@ -48,7 +50,11 @@ struct EncodeScreen: View {
                     
                 
                 Button(action: {
-                    // TODO check if document.data.isEmpty || message.isEmpty
+                    
+                    if document.data.isEmpty || secretMessage.message == EncodeScreen.hint || secretMessage.message.isEmpty {
+                        self.showEmptyFieldsAlert = true
+                        return
+                    }
                     encodeImage(data: document.data)
                 }) {
                     HStack {
@@ -56,6 +62,11 @@ struct EncodeScreen: View {
                         Text("Encode")
                     }
                 }.buttonStyle(GradientButtonStyle())
+                .alert(isPresented: $showEmptyFieldsAlert, content: {
+                    Alert(title: Text("Error"),
+                          message: Text("Please upload a file and input a secret message"),
+                          dismissButton: .default(Text("Ok")))
+                })
             }
             
             if showProgressView {
@@ -84,14 +95,12 @@ struct EncodeScreen: View {
             try? img.pngData()!.write(to: filename!)
             DispatchQueue.main.async {
                 document.data = Data()
+                secretMessage.message = ""
             }
-            secretMessage.message = ""
             showProgressView = false
 
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
