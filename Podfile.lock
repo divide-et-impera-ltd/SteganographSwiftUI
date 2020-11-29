@@ -1,20 +1,24 @@
 PODS:
   - ISStego (0.0.3)
+  - lottie-ios (3.1.9)
   - PKHUD (5.3.0)
 
 DEPENDENCIES:
   - ISStego
+  - lottie-ios
   - PKHUD (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - ISStego
+    - lottie-ios
     - PKHUD
 
 SPEC CHECKSUMS:
   ISStego: 40e538fdda4f7928cd62233101bec7176853a1c0
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
 
-PODFILE CHECKSUM: 882b24b6e88767dbcc5a5519b051f3a7e0a786b4
+PODFILE CHECKSUM: 2e94b677a8e4039b912f668e70dd2bacd010ce37
 
 COCOAPODS: 1.10.0

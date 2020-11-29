@@ -36,7 +36,9 @@ struct DecodeScreen: View {
                    
                 }, onDismiss: { self.showFilePicker = false })
             })
+            
             Spacer().frame(height: 24)
+            
             Button(action: {
                 ISSteganographer.data(fromImage: UIImage(data: document.data)) { data, error in
                     if let error = error {
@@ -47,10 +49,14 @@ struct DecodeScreen: View {
                 }
                 
             }, label: {
-                Image(systemName: "lock.open.fill")
-                Text("Decode")
-            })
+                HStack {
+                    Image(systemName: "lock.open.fill")
+                    Text("Decode")
+                }
+            }).buttonStyle(GradientButtonStyle())
+            
             Spacer().frame(height: 24)
+            
             Text(decodedMessage)
                 .multilineTextAlignment(TextAlignment.center)
         }

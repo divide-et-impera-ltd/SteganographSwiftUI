@@ -37,7 +37,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
         return controller
     }
 
-    class Coordinator: NSObject, UIDocumentPickerDelegate {
+    internal class Coordinator: NSObject, UIDocumentPickerDelegate {
         var parent: DocumentPicker
         init(_ pickerController: DocumentPicker) {
             self.parent = pickerController

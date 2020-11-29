@@ -24,6 +24,6 @@ struct AppView: View {
                     Text("Decode")
                 }
 
-        }
+        }.accentColor(.orange)
     }
 }

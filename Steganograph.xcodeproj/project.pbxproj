@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		E30F69452572E94D0055C93A /* DecodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F69442572E94D0055C93A /* DecodeScreen.swift */; };
 		E30F69492572F3270055C93A /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F69482572F3270055C93A /* DocumentPicker.swift */; };
 		E30F6962257309110055C93A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F6961257309110055C93A /* Document.swift */; };
+		E30F697425733D0D0055C93A /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F697325733D0D0055C93A /* GradientButtonStyle.swift */; };
+		E3845CFF2573F5530010A155 /* photo_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E3845CFE2573F5530010A155 /* photo_animation.json */; };
+		E3845D022573F5790010A155 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D012573F5790010A155 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		E30F69442572E94D0055C93A /* DecodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeScreen.swift; sourceTree = "<group>"; };
 		E30F69482572F3270055C93A /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		E30F6961257309110055C93A /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		E30F697325733D0D0055C93A /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		E3845CFE2573F5530010A155 /* photo_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photo_animation.json; sourceTree = "<group>"; };
+		E3845D012573F5790010A155 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +82,12 @@
 		E30F692E2571AE7A0055C93A /* Steganograph */ = {
 			isa = PBXGroup;
 			children = (
+				E3845D042573F57E0010A155 /* Views */,
+				E3845CFD2573F53F0010A155 /* Resources */,
 				E30F696625730ADF0055C93A /* Models */,
 				E30F694C2572F38F0055C93A /* Screens */,
 				E30F693F2571BFF20055C93A /* Steganograph.entitlements */,
 				E30F692F2571AE7A0055C93A /* SteganographApp.swift */,
-				E30F69412572E8F30055C93A /* AppView.swift */,
 				E30F69482572F3270055C93A /* DocumentPicker.swift */,
 				E30F69332571AE7B0055C93A /* Assets.xcassets */,
 				E30F69382571AE7B0055C93A /* Info.plist */,
@@ -120,8 +127,25 @@
 				29441CA1D0FCC465B1018614 /* Pods-Steganograph.debug.xcconfig */,
 				6FF37398C6A1B1C9331758D5 /* Pods-Steganograph.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3845CFD2573F53F0010A155 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3845CFE2573F5530010A155 /* photo_animation.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3845D042573F57E0010A155 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3845D012573F5790010A155 /* LottieView.swift */,
+				E30F697325733D0D0055C93A /* GradientButtonStyle.swift */,
+				E30F69412572E8F30055C93A /* AppView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +209,7 @@
 			files = (
 				E30F69372571AE7B0055C93A /* Preview Assets.xcassets in Resources */,
 				E30F69342571AE7B0055C93A /* Assets.xcassets in Resources */,
+				E3845CFF2573F5530010A155 /* photo_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +266,10 @@
 				E30F69452572E94D0055C93A /* DecodeScreen.swift in Sources */,
 				E30F6962257309110055C93A /* Document.swift in Sources */,
 				E30F69302571AE7A0055C93A /* SteganographApp.swift in Sources */,
+				E30F697425733D0D0055C93A /* GradientButtonStyle.swift in Sources */,
 				E30F69492572F3270055C93A /* DocumentPicker.swift in Sources */,
 				E30F69422572E8F30055C93A /* AppView.swift in Sources */,
+				E3845D022573F5790010A155 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
