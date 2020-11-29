@@ -16,6 +16,7 @@ struct EncodeScreen: View {
     @ObservedObject var document: Document
     @State private var message: String = ""
     @State private var documentUrl: String = ""
+
     
     var body: some View {
        
@@ -56,7 +57,7 @@ struct EncodeScreen: View {
                         document.data = img.pngData()!
                         
                     }
-                    let filename = URL(string: documentUrl)?.appendingPathComponent("steganograped.png")
+                    let filename = URL(string: documentUrl)?.appendingPathComponent("\(randomString(length: 12)).png")
                     try? img.pngData()!.write(to: filename!)
                    
                 }
@@ -67,6 +68,14 @@ struct EncodeScreen: View {
             
         }
     }
+    
+    
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+      return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
