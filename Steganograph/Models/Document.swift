@@ -9,7 +9,6 @@ import Foundation
 
 class Document: ObservableObject {
     
-//    @Published var path = URL(strL)
     @Published var data = Data()
     
 }

@@ -13,19 +13,18 @@ struct PlaceholderImage: View {
     @ObservedObject var document: Document
     @State var play = 1
     
+    @ViewBuilder
     var body: some View {
-        HStack {
-            if document.data.isEmpty {
-                LottieView(name: "photo_animation", play: $play)
-                    .frame(width: 150, height: 150)
-            } else {
-                Image(uiImage: (UIImage(data: document.data)!))
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                    .clipShape(Circle())
-                    .shadow(radius: 20)
-            }
+        if document.data.isEmpty {
+            LottieView(name: "photo_animation", play: $play)
+                .frame(width: 200, height: 200)
+        } else {
+            Image(uiImage: (UIImage(data: document.data)!))
+                .resizable()
+                .scaledToFit()
+                .frame(width: 300, height: 300)
+                .clipShape(Rectangle())
+                .shadow(radius: 25)
         }
     }
 }
