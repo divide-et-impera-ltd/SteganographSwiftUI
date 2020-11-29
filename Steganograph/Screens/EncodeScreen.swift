@@ -14,11 +14,11 @@ import ISStego
 struct EncodeScreen: View {
     
     @State var showFilePicker = false
-    @ObservedObject var document: Document
+    @StateObject var document = Document()
     @State private var message: String = ""
     @State private var documentUrl: String = ""
     
-    @State var play = 1
+   
     
     var body: some View {
        
@@ -26,19 +26,7 @@ struct EncodeScreen: View {
             Button (action: {
                 self.showFilePicker.toggle()
             }) {
-                HStack {
-                    if document.data.isEmpty {
-                        LottieView(name: "photo_animation", play: $play)
-                            .frame(width: 150, height: 150)
-                    } else {
-                        Image(uiImage: (UIImage(data: document.data)!))
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 250, height: 250)
-                            .clipShape(Circle())
-                            .shadow(radius: 20)
-                    }
-                }
+                PlaceholderImage(document: document)
             }
             .sheet(isPresented: $showFilePicker) {
                 DocumentPicker(callback: { url in

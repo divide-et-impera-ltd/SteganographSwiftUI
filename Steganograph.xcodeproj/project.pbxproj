@@ -19,6 +19,7 @@
 		E30F697425733D0D0055C93A /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30F697325733D0D0055C93A /* GradientButtonStyle.swift */; };
 		E3845CFF2573F5530010A155 /* photo_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E3845CFE2573F5530010A155 /* photo_animation.json */; };
 		E3845D022573F5790010A155 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D012573F5790010A155 /* LottieView.swift */; };
+		E3845D072574212B0010A155 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D062574212B0010A155 /* PlaceholderImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E30F697325733D0D0055C93A /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		E3845CFE2573F5530010A155 /* photo_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photo_animation.json; sourceTree = "<group>"; };
 		E3845D012573F5790010A155 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E3845D062574212B0010A155 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				E3845D012573F5790010A155 /* LottieView.swift */,
 				E30F697325733D0D0055C93A /* GradientButtonStyle.swift */,
 				E30F69412572E8F30055C93A /* AppView.swift */,
+				E3845D062574212B0010A155 /* PlaceholderImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3845D072574212B0010A155 /* PlaceholderImage.swift in Sources */,
 				E30F69322571AE7A0055C93A /* EncodeScreen.swift in Sources */,
 				E30F69452572E94D0055C93A /* DecodeScreen.swift in Sources */,
 				E30F6962257309110055C93A /* Document.swift in Sources */,

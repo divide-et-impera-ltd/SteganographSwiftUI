@@ -9,16 +9,14 @@ import SwiftUI
 
 struct AppView: View {
     
-    @StateObject var document = Document()
-    
     var body: some View {
         TabView {
-            EncodeScreen(document: document)
+            EncodeScreen()
                 .tabItem {
                     Image(systemName: "lock.fill")
                     Text("Encode")
                 }
-            DecodeScreen(document: document)
+            DecodeScreen()
                 .tabItem {
                     Image(systemName: "lock.open.fill")
                     Text("Decode")

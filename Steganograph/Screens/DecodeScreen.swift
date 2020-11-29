@@ -11,7 +11,7 @@ import ISStego
 struct DecodeScreen: View {
     
     @State var showFilePicker = false
-    @ObservedObject var document: Document
+    @StateObject var document = Document()
     @State private var decodedMessage: String = ""
     
     var body: some View {
@@ -19,12 +19,7 @@ struct DecodeScreen: View {
             Button(action: {
                 self.showFilePicker.toggle()
             }, label: {
-                Image(uiImage: (UIImage(data: document.data) ?? UIImage(systemName: "square.and.arrow.down"))!)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250, height: 250)
-                    .clipShape(Circle())
-                    .shadow(radius: 20)
+                PlaceholderImage(document: document)
             }).sheet(isPresented: $showFilePicker, content: {
                 DocumentPicker(callback: { url in
                     do {
