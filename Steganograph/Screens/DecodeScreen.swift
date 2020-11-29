@@ -37,28 +37,30 @@ struct DecodeScreen: View {
                 Spacer().frame(height: 24)
                 
                 Button(action: {
-                    showProgressView = true
-                    ISSteganographer.data(fromImage: UIImage(data: document.data)) { data, error in
-                        if let error = error {
-                            print(error)
-                            showProgressView = false
-                        }
-                        let secretMessage = String(data: data!, encoding: String.Encoding.utf8)
-                        self.decodedMessage = secretMessage!
-                        showProgressView = false
+                    if document.data.isEmpty {
+                        // TODO display alert to prompt user to drop image
                     }
-                    
-                }, label: {
+                    decodeImage(data: document.data)
+                }) {
                     HStack {
                         Image(systemName: "lock.open.fill")
                         Text("Decode")
                     }
-                }).buttonStyle(GradientButtonStyle())
+                }.buttonStyle(GradientButtonStyle())
                 
                 Spacer().frame(height: 24)
                 
-                Text("The secret message is: \(decodedMessage)")
-                    .multilineTextAlignment(TextAlignment.center)
+                VStack {
+                    if !decodedMessage.isEmpty {
+                    TextEditor(text: $decodedMessage)
+                        .foregroundColor(.gray)
+                        .cornerRadius(25)
+                        .frame(height: 150)
+                        .shadow(radius: 5)
+                        .padding(EdgeInsets(top: 12, leading: 24, bottom: 24, trailing: 24))
+                    }
+                }
+                
             }
             
             
@@ -66,6 +68,19 @@ struct DecodeScreen: View {
                 ProgressView("Decoding...")
                     .progressViewStyle(CircularProgressViewStyle())
             }
+        }
+    }
+    
+    func decodeImage(data: Data) {
+        showProgressView = true
+        ISSteganographer.data(fromImage: UIImage(data: data)) { data, error in
+            if let error = error {
+                print(error)
+                showProgressView = false
+            }
+            let secretMessage = String(data: data!, encoding: String.Encoding.utf8)
+            self.decodedMessage = secretMessage!
+            showProgressView = false
         }
     }
 }

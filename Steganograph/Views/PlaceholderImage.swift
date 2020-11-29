@@ -22,8 +22,8 @@ struct PlaceholderImage: View {
             Image(uiImage: (UIImage(data: document.data)!))
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300, height: 300)
-                .clipShape(Rectangle())
+                .frame(width: 250, height: 250)
+                .clipShape(Circle())
                 .shadow(radius: 25)
         }
     }

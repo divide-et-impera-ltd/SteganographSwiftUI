@@ -12,14 +12,14 @@ import ISStego
 
 
 struct EncodeScreen: View {
-    
+    static let hint = "Enter your secret message:"
     @State var showFilePicker = false
     @StateObject var document = Document()
-    @State private var message: String = ""
+    @State private var message: String = hint
     @State private var documentUrl: String = ""
     @State private var showProgressView: Bool = false
     
-   
+
     
     var body: some View {
         
@@ -42,26 +42,25 @@ struct EncodeScreen: View {
                         
                     }, onDismiss: { self.showFilePicker = false })
                 }
-                Spacer().frame(height: 24)
-                TextField("Enter your secret message", text: $message)
-                    .multilineTextAlignment(TextAlignment.center)
-                Spacer().frame(height: 24)
-                Button(action: {
-                    showProgressView = true
-                    ISSteganographer.hideData(message, withImage: UIImage(data: document.data)) { image, error in
-                        if let error = error {
-                            print(error)
-                            showProgressView = false
+                
+                
+                TextEditor(text: $message)
+                    .foregroundColor(Color.gray)
+                    .frame(height: 150)
+                    .cornerRadius(25)
+                    .shadow(radius: 5)
+                    .padding(EdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24))
+                    .onTapGesture {
+                        if message == EncodeScreen.hint {
+                            message = ""
                         }
-                        let img = image as! UIImage
-                        DispatchQueue.main.async {
-                            document.data = img.pngData()!
-                            
-                        }
-                        let filename = URL(string: documentUrl)?.appendingPathComponent("\(randomString(length: 12)).png")
-                        try? img.pngData()!.write(to: filename!)
-                        showProgressView = false
                     }
+                    
+                    
+                
+                Button(action: {
+                    // TODO check if document.data.isEmpty || message.isEmpty
+                    encodeImage(data: document.data)
                 }) {
                     HStack {
                         Image(systemName: "lock.fill")
@@ -81,6 +80,26 @@ struct EncodeScreen: View {
     func randomString(length: Int) -> String {
       let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
       return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
+    func encodeImage(data: Data) {
+        showProgressView = true
+        ISSteganographer.hideData(message, withImage: UIImage(data: data)) { image, error in
+            if let error = error {
+                print(error)
+                showProgressView = false
+            }
+            let img = image as! UIImage
+
+            let filename = URL(string: documentUrl)?.appendingPathComponent("\(randomString(length: 12)).png")
+            try? img.pngData()!.write(to: filename!)
+            DispatchQueue.main.async {
+                document.data = Data()
+            }
+            message = ""
+            showProgressView = false
+
+        }
     }
     
     
