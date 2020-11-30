@@ -26,6 +26,7 @@ struct DecodeScreen: View {
                 }).sheet(isPresented: $showFilePicker, content: {
                     DocumentPicker(callback: { url in
                         do {
+                            url.startAccessingSecurityScopedResource()
                             document.data = try Data(contentsOf: url)
                             print(url.deletingLastPathComponent())
                         } catch {

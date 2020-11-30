@@ -6,7 +6,6 @@ target 'Steganograph' do
   use_frameworks!
 
   # Pods for Steganograph
-	pod 'PKHUD', '~> 5.0'
 	pod 'lottie-ios'
 	pod 'ISStego'
 end

@@ -17,8 +17,8 @@ struct EncodeScreen: View {
     @StateObject var document = Document()
     @StateObject var secretMessage = SecretMessage(hint)
     
-    @State private var documentUrl: String = ""
-    @State private var showProgressView: Bool = false
+    @State var documentUrl: String = ""
+    @State var showProgressView: Bool = false
     @State var showFilePicker = false
     @State var showEmptyFieldsAlert = false
     
@@ -35,9 +35,10 @@ struct EncodeScreen: View {
                 .sheet(isPresented: $showFilePicker) {
                     DocumentPicker(callback: { url in
                         do {
+                            url.startAccessingSecurityScopedResource()
                             document.data = try Data(contentsOf: url)
-                            print(url.deletingLastPathComponent())
-                            documentUrl = url.deletingLastPathComponent().absoluteString
+                            print(url.deletingLastPathComponent().path)
+                            documentUrl = url.deletingLastPathComponent().relativePath
                         } catch {
                             print(error)
                         }
@@ -90,9 +91,19 @@ struct EncodeScreen: View {
                 showProgressView = false
             }
             let img = image as! UIImage
-
-            let filename = URL(string: documentUrl)?.appendingPathComponent("\(randomString(length: 12)).png")
-            try? img.pngData()!.write(to: filename!)
+            let url = URL(fileURLWithPath: documentUrl)
+            
+            let filename = URL(fileURLWithPath: "\(randomString(length: 12)).png", relativeTo: url)
+            
+            filename.startAccessingSecurityScopedResource()
+            
+            do {
+               
+                try img.pngData()!.write(to: filename)
+            } catch {
+                print(error)
+            }
+           
             DispatchQueue.main.async {
                 document.data = Data()
                 secretMessage.message = ""
