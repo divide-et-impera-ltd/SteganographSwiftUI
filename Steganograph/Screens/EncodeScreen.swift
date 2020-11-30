@@ -18,10 +18,11 @@ struct EncodeScreen: View {
     @StateObject var secretMessage = SecretMessage(hint)
     
     @State var documentUrl: String = ""
+    
     @State var showProgressView: Bool = false
     @State var showFilePicker = false
     @State var showEmptyFieldsAlert = false
-    
+    @State var showShareView = false
     
     var body: some View {
         
@@ -35,10 +36,12 @@ struct EncodeScreen: View {
                 .sheet(isPresented: $showFilePicker) {
                     DocumentPicker(callback: { url in
                         do {
+                            showProgressView = true
                             url.startAccessingSecurityScopedResource()
                             document.data = try Data(contentsOf: url)
                             print(url.deletingLastPathComponent().path)
                             documentUrl = url.deletingLastPathComponent().relativePath
+                            showProgressView = false
                         } catch {
                             print(error)
                         }
@@ -48,26 +51,44 @@ struct EncodeScreen: View {
                 
                 
                 CustomTextEditor(secretMessage: secretMessage)
-                    
                 
-                Button(action: {
+                
+                HStack {
+                    Button(action: {
+                        
+                        if document.data.isEmpty || secretMessage.message == EncodeScreen.hint || secretMessage.message.isEmpty {
+                            self.showEmptyFieldsAlert = true
+                            return
+                        }
+                        encodeImage(data: document.data)
+                    }) {
+                        HStack {
+                            Image(systemName: "lock.fill")
+                            Text("Encode")
+                        }
+                    }.buttonStyle(GradientButtonStyle())
+                    .alert(isPresented: $showEmptyFieldsAlert, content: {
+                        Alert(title: Text("Error"),
+                              message: Text("Please upload a file and input a secret message"),
+                              dismissButton: .default(Text("Ok")))
+                    })
                     
-                    if document.data.isEmpty || secretMessage.message == EncodeScreen.hint || secretMessage.message.isEmpty {
-                        self.showEmptyFieldsAlert = true
-                        return
+                    
+                    if !document.data.isEmpty {
+                        Button(action: {
+                            self.showShareView.toggle()
+                        }) {
+                            HStack {
+                                Image(systemName: "square.and.arrow.up")
+                                Text("Share")
+                            }
+                        }.sheet(isPresented: $showShareView) {
+                            ShareSheet(activityItems: [document.encodedImage.pngData()!])
+                        }.buttonStyle(GradientButtonStyle())
                     }
-                    encodeImage(data: document.data)
-                }) {
-                    HStack {
-                        Image(systemName: "lock.fill")
-                        Text("Encode")
-                    }
-                }.buttonStyle(GradientButtonStyle())
-                .alert(isPresented: $showEmptyFieldsAlert, content: {
-                    Alert(title: Text("Error"),
-                          message: Text("Please upload a file and input a secret message"),
-                          dismissButton: .default(Text("Ok")))
-                })
+                }
+                
+                
             }
             
             if showProgressView {
@@ -91,21 +112,11 @@ struct EncodeScreen: View {
                 showProgressView = false
             }
             let img = image as! UIImage
-            let url = URL(fileURLWithPath: documentUrl)
+            img.accessibilityIdentifier = randomString(length: 12)
             
-            let filename = URL(fileURLWithPath: "\(randomString(length: 12)).png", relativeTo: url)
-            
-            filename.startAccessingSecurityScopedResource()
-            
-            do {
-               
-                try img.pngData()!.write(to: filename)
-            } catch {
-                print(error)
-            }
-           
             DispatchQueue.main.async {
-                document.data = Data()
+                document.data = img.pngData()!
+                document.encodedImage = img
                 secretMessage.message = ""
             }
             showProgressView = false

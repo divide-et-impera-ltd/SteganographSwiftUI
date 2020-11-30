@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Document: ObservableObject {
     
     @Published var data = Data()
+    @Published var encodedImage = UIImage()
     
 }

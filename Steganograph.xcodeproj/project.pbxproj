@@ -22,6 +22,7 @@
 		E3845D072574212B0010A155 /* PlaceholderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D062574212B0010A155 /* PlaceholderImage.swift */; };
 		E3845D1225745C110010A155 /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D1125745C110010A155 /* CustomTextEditor.swift */; };
 		E3845D1525745C7C0010A155 /* SecretMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D1425745C7C0010A155 /* SecretMessage.swift */; };
+		E3845D1D2575801B0010A155 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3845D1C2575801B0010A155 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E3845D062574212B0010A155 /* PlaceholderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImage.swift; sourceTree = "<group>"; };
 		E3845D1125745C110010A155 /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
 		E3845D1425745C7C0010A155 /* SecretMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretMessage.swift; sourceTree = "<group>"; };
+		E3845D1C2575801B0010A155 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		E3845D042573F57E0010A155 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3845D1C2575801B0010A155 /* ShareSheet.swift */,
 				E3845D012573F5790010A155 /* LottieView.swift */,
 				E30F697325733D0D0055C93A /* GradientButtonStyle.swift */,
 				E30F69412572E8F30055C93A /* AppView.swift */,
@@ -278,6 +281,7 @@
 				E30F6962257309110055C93A /* Document.swift in Sources */,
 				E3845D1225745C110010A155 /* CustomTextEditor.swift in Sources */,
 				E30F69302571AE7A0055C93A /* SteganographApp.swift in Sources */,
+				E3845D1D2575801B0010A155 /* ShareSheet.swift in Sources */,
 				E30F697425733D0D0055C93A /* GradientButtonStyle.swift in Sources */,
 				E30F69492572F3270055C93A /* DocumentPicker.swift in Sources */,
 				E30F69422572E8F30055C93A /* AppView.swift in Sources */,
