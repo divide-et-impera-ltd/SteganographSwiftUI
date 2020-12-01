@@ -95,8 +95,8 @@ struct EncodeScreen: View {
                 ProgressView("Encoding...")
                     .progressViewStyle(CircularProgressViewStyle())
             }
-        }
-    }
+        }.onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
+    } 
     
     
     func randomString(length: Int) -> String {

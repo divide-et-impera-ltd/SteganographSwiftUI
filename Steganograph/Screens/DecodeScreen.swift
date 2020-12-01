@@ -68,7 +68,7 @@ struct DecodeScreen: View {
                 ProgressView("Decoding...")
                     .progressViewStyle(CircularProgressViewStyle())
             }
-        }
+        }.onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
     }
     
     func decodeImage(data: Data) {
